@@ -4,7 +4,7 @@
 Pipeline role (1st-place EventAid-F solution, team yunyu8):
   data prep -> TRAINING (this file) -> member inference -> fusion -> submission.
   Training-data source for the "real-event specialist" EMA-E variants of the
-  28-member ensemble. Those specialists are routed at inference time (by event
+  30-member ensemble. Those specialists are routed at inference time (by event
   density) to fast/medium-motion scenes, where real-event training transfers
   best. This is the data-side bet of the solution: instead of SIMULATING
   events from RGB (which suffers a sim-to-real gap), train EMA-E on ERF's REAL

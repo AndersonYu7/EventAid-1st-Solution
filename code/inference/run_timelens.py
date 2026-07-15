@@ -3,7 +3,7 @@
 
 Pipeline role (1st-place solution, team yunyu8, Codabench 16375):
   MEMBER-INFERENCE stage script. TimeLens is an event-based member of the
-  28-member ensemble; its outputs are also base inputs to our trained
+  30-member ensemble; its outputs are also base inputs to our trained
   fusion refiners (run_refiner*.py). Pipeline: data prep -> training ->
   member inference (THIS script) -> per-frame quadratic-form fusion
   (recipe_v15/v16.json) -> submission assembly (scripts/build_final.py).

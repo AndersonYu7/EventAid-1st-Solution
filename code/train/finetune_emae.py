@@ -5,7 +5,7 @@ Role in the 1st-place EventAid-F pipeline (team yunyu8, Codabench 16375)
 ------------------------------------------------------------------------
 This is a TRAINING-stage script (pipeline: data prep -> **training** ->
 member inference -> fusion -> submission).  It produces the synthetic-event
-EMA-E checkpoints that serve as ensemble members of the final 28-member
+EMA-E checkpoints that serve as ensemble members of the final 30-member
 blend: EMA-E is EMA-VFI with a zero-initialized event-voxel "graft"
 (a small event encoder whose features are injected into the frozen-shape
 backbone), so training starts exactly at pretrained EMA-VFI quality and can

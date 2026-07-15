@@ -3,7 +3,7 @@
 
 Pipeline role (1st-place EventAid-F solution, team yunyu8):
   DATA PREP (this file) -> training -> member inference -> fusion -> submission.
-  The 1.74M-parameter fusion refiners in the 28-member ensemble learn to
+  The learned fusion refiners in the 30-member ensemble learn to
   combine several base-interpolator outputs plus an event voxel into a better
   middle frame. This script manufactures their supervised training set: for
   random (anchor pair, target time) draws it runs the frozen base models

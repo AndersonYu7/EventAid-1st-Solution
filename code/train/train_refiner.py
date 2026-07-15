@@ -5,7 +5,7 @@ Role in the 1st-place EventAid-F pipeline (team yunyu8, Codabench 16375)
 ------------------------------------------------------------------------
 TRAINING-stage script (pipeline: data prep -> **training** -> member
 inference -> fusion -> submission).  The refiner is one of "our own fusion
-refiners" in the 28-member ensemble: a lightweight U-Net that, per pixel,
+refiners" in the 30-member ensemble: a lightweight U-Net that, per pixel,
 gates between several base interpolations (GIMM-VFI, TimeLens, linear frame
 blend, optionally GIMM-refined) conditioned on the event voxel, and adds a
 small bounded RGB residual.  Its outputs join the per-frame quadratic-form

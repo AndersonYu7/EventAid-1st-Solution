@@ -5,7 +5,7 @@ Role in the 1st-place EventAid-F pipeline (team yunyu8, Codabench 16375)
 ------------------------------------------------------------------------
 Pipeline stages: data prep -> training -> member inference -> fusion ->
 submission. This module belongs to the FUSION stage: it defines the
-~1.74M-parameter learned fusion refiners of the 28-member ensemble. After
+4.86M-parameter learned fusion refiners of the 30-member ensemble. After
 the individual members (EMA-E, RIFE, GIMM-VFI, VFIMamba, TimeLens, REFID,
 CBMNet, ...) have produced their per-frame predictions, a RefinerV2 takes
 a small set of those base predictions plus the event voxel and anchor

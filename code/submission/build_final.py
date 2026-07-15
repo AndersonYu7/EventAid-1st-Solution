@@ -7,7 +7,7 @@ Role in the pipeline
 This is the very last stage of the pipeline
 (data prep -> training -> member inference -> fusion -> **submission**):
 it takes the already-fused v16 ensemble output (produced by
-scripts/make_submission.py with recipe_v16.json from the 28-member ensemble)
+scripts/make_submission.py with recipe_v16.json from the 30-member ensemble)
 and layers two final, "paper-clean" specialist blends on top before packaging
 the uint8 PNG zip that was uploaded to Codabench
 (official scores: validation 43.1056 dB / 0.9802 SSIM, test 31.8835 dB / 0.9088).

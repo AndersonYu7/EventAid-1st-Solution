@@ -9,7 +9,7 @@ scripts/refiner_v2arch.py), the stronger architecture variant of the fusion
 refiner: it consumes the event voxel and anchor frames through a deformable
 + temporal-attention trunk instead of the plain v1 U-Net, then gates the
 gimm/tl/lin base interpolations per pixel.  Trained v2 refiners feed the
-28-member ensemble as additional members alongside the v1 refiner.
+30-member ensemble as additional members alongside the v1 refiner.
 
 Reuses the v1 shard format (gimm/tl/lin bases) via train_refiner.ShardDataset.
 v1 training recipe (no augs, which empirically transferred best),

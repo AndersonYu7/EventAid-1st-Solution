@@ -6,7 +6,7 @@ Role in the 1st-place EventAid-F pipeline (team yunyu8, Codabench 16375)
 Pipeline stages: data prep -> training -> member inference -> fusion ->
 submission. This module belongs to the TRAINING and MEMBER-INFERENCE
 stages: it defines the network for the EMA-E ensemble members (the
-event-grafted EMA-VFI variants of the 28-member ensemble). Training
+event-grafted EMA-VFI variants of the 30-member ensemble). Training
 scripts import `build_emae()` to fine-tune from the pretrained image-only
 EMA-VFI weights; per-member inference scripts import it again to load
 the fine-tuned checkpoints and produce the frame predictions that are

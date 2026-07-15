@@ -3,7 +3,7 @@
 
 Pipeline role (1st-place solution, team yunyu8, Codabench 16375):
   MEMBER-INFERENCE stage script. CBMNet-Large is the dedicated DIVERSITY
-  member of the 28-member ensemble, blended at a fixed weight of 0.20 in
+  member of the 30-member ensemble, blended at a fixed weight of 0.20 in
   the final recipe. Pipeline: data prep -> training -> member inference
   (THIS script) -> per-frame quadratic-form fusion (recipe_v15/v16.json)
   -> submission assembly (scripts/build_final.py). Outputs per TODO frame

@@ -2,11 +2,11 @@
 """Apply the trained fusion refiner (RefinerUNet) to real challenge data.
 
 Pipeline role (1st-place solution, team yunyu8, Codabench 16375):
-  MEMBER-INFERENCE stage script for one of our own 1.74M-parameter fusion
+  MEMBER-INFERENCE stage script for one of our own learned fusion
   refiners. The refiner is trained (scripts/train_refiner.py) to combine
   precomputed base-member outputs (GIMM-VFI, TimeLens, linear blend) with
   event evidence into a better frame; its outputs are themselves members
-  of the 28-member ensemble. Pipeline: data prep -> training -> member
+  of the 30-member ensemble. Pipeline: data prep -> training -> member
   inference (THIS script, run AFTER the base members it consumes) ->
   per-frame quadratic-form fusion (recipe_v15/v16.json) -> submission
   assembly (scripts/build_final.py).

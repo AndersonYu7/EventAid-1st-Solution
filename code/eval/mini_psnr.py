@@ -9,7 +9,7 @@ directory -- a single ensemble member, a partial inference run still in
 progress, or a fused blend -- against the validation ground truth. Partial
 result dirs are fine: only frames that exist AND have a matching GT image are
 scored, so it can be pointed at a run mid-inference. Scores from this tool
-guided which members entered the 28-member ensemble and how fusion recipes
+guided which members entered the 30-member ensemble and how fusion recipes
 were iterated (final full scoring used val_blend_score.py / build_final.py).
 
 Inputs

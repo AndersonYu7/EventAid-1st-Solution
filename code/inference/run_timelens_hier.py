@@ -3,7 +3,7 @@
 
 Pipeline role (1st-place solution, team yunyu8, Codabench 16375):
   MEMBER-INFERENCE stage script. This hierarchical TimeLens variant is a
-  separate member of the 28-member ensemble, complementary to the direct
+  separate member of the 30-member ensemble, complementary to the direct
   runner (run_timelens.py) at large skips. Pipeline: data prep -> training
   -> member inference (THIS script) -> per-frame quadratic-form fusion
   (recipe_v15/v16.json) -> submission assembly (scripts/build_final.py).

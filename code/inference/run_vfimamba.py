@@ -3,7 +3,7 @@
 
 Pipeline role (1st-place solution, team yunyu8, Codabench 16375):
   MEMBER-INFERENCE stage script. VFIMamba is an image-only member of the
-  28-member ensemble (state-space-model architecture, adds diversity to the
+  30-member ensemble (state-space-model architecture, adds diversity to the
   transformer/flow members). Pipeline: data prep -> training -> member
   inference (THIS script) -> per-frame quadratic-form fusion
   (recipe_v15/v16.json) -> submission assembly (scripts/build_final.py).

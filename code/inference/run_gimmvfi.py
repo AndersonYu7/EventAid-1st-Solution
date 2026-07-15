@@ -3,7 +3,7 @@
 
 Pipeline role (1st-place solution, team yunyu8, Codabench 16375):
   MEMBER-INFERENCE stage script. GIMM-VFI (both -F and -R variants) are
-  image-only members of the 28-member ensemble; their outputs also serve as
+  image-only members of the 30-member ensemble; their outputs also serve as
   base inputs to our trained fusion refiners (run_refiner*.py). Pipeline:
   data prep -> training -> member inference (THIS script) -> per-frame
   quadratic-form fusion (recipe_v15/v16.json) -> submission assembly

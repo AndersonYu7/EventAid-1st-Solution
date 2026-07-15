@@ -4,7 +4,7 @@
 Role in the 1st-place EventAid-F pipeline (team yunyu8, Codabench 16375):
   data prep -> training -> member inference -> [FUSION (this script)] -> submission.
   This is the recipe *optimizer* of the fusion stage. Given the per-member
-  prediction directories produced by the member-inference stage (28-member
+  prediction directories produced by the member-inference stage (30-member
   ensemble: EMA-E grafts, EMA-VFI/RIFE/GIMM-VFI/VFIMamba/TimeLens/TimeLens-XL/
   REFID/CBMNet variants, fusion refiners), it fits per-skip, per-position-bucket
   linear blend weights on the validation split. Successive runs of this

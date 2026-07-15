@@ -3,7 +3,7 @@
 
 Pipeline role (1st-place solution, team yunyu8, Codabench 16375):
   This is a MEMBER-INFERENCE stage script. EMA-E is our zero-initialized
-  event graft on EMA-VFI and the strongest single member of the 28-member
+  event graft on EMA-VFI and the strongest single member of the 30-member
   ensemble. The pipeline is: data prep -> training (train scripts produce the
   EMA-E checkpoints) -> member inference (THIS script, one results dir per
   member/variant) -> per-frame quadratic-form fusion (recipe_v15/v16.json)

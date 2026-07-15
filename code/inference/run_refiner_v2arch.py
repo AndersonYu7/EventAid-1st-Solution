@@ -3,12 +3,12 @@
 
 Pipeline role (1st-place solution, team yunyu8, Codabench 16375):
   MEMBER-INFERENCE stage script for the v2-architecture variant of our own
-  lightweight fusion refiners (refiner_v2arch.py; the ~1.74M-param design).
+  lightweight fusion refiners (refiner_v2arch.py; the 4.86M-param design).
   Like run_refiner.py it fuses precomputed base members (GIMM-VFI,
   TimeLens, linear anchor blend) with event evidence, but RefinerV2 takes
   the event voxel and anchor context as a separate conditioning input
   instead of one flat channel stack. Its refined outputs are members of
-  the 28-member ensemble. Pipeline: data prep -> training (scripts/
+  the 30-member ensemble. Pipeline: data prep -> training (scripts/
   refiner_v2arch.py trainer) -> member inference (THIS script, run AFTER
   the base members it consumes) -> per-frame quadratic-form fusion
   (recipe_v15/v16.json) -> submission assembly (scripts/build_final.py).

@@ -4,7 +4,7 @@
 Pipeline role (1st-place solution, team yunyu8, Codabench 16375):
   MEMBER-INFERENCE stage script. EMA-VFI variants (pretrained 'ours' and
   our EventAid-finetuned soups 'ours_ft_*') are image-only members of the
-  28-member ensemble. Pipeline: data prep -> training -> member inference
+  30-member ensemble. Pipeline: data prep -> training -> member inference
   (THIS script) -> per-frame quadratic-form fusion (recipe_v15/v16.json)
   -> submission assembly (scripts/build_final.py).
 
