@@ -1,0 +1,23 @@
+# EventAid_Final — exact package versions the winning pipeline ran with.
+# Python 3.13, CUDA 12.8 (4x RTX 3090 Ti). Install into a fresh env:
+#   conda create -n eventaid python=3.13 -y
+#   conda activate eventaid
+#   pip install -r requirements.txt
+#
+# This file = the CORE pipeline only (verify.sh quick mode, the official evaluator,
+# EMA-E / EMA-VFI / refiners / fusion / build_final.py).
+# For FULL member inference (GIMM-VFI, VFIMamba, REFID, TimeLens, gen_refiner_data.py)
+# also install requirements-external.txt — see that file and the README Requirements
+# section for the CUDA-kernel build steps.
+#
+# Core (verify.sh quick mode + evaluator need only these):
+torch==2.9.0
+torchvision==0.24.0
+numpy==2.2.6
+pillow==12.2.0
+scipy==1.16.3
+opencv-python==4.12.0.88
+scikit-image==0.26.0
+# Model-code dependencies (EMA-VFI / member runners):
+timm==1.0.27
+einops==0.8.2

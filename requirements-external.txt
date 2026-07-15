@@ -1,0 +1,28 @@
+# EventAid_Final — dependencies of the EXTERNAL member repositories.
+#
+# requirements.txt covers the core pipeline (verify.sh quick mode, the official
+# evaluator, EMA-E / EMA-VFI / refiners / fusion). The packages below are needed
+# only for FULL member inference and data generation, i.e. when running the
+# external interpolators (GIMM-VFI, VFIMamba, REFID, TimeLens) and gen_refiner_data.py.
+# Each line notes which member/stage it unlocks. Install after requirements.txt:
+#   pip install -r requirements-external.txt
+#
+# NOTE ordering: mamba-ssm / causal-conv1d compile CUDA kernels and must be built
+# with --no-build-isolation so they see the already-installed torch. Install ninja
+# first, then:
+#   MAX_JOBS=8 pip install --no-build-isolation causal-conv1d mamba-ssm
+
+setuptools==80.10.2        # < 81 required: setuptools 81 removed pkg_resources, which TimeLens (superslomo/unet.py) imports
+ninja==1.13.0              # build backend for the two CUDA-kernel packages below
+
+cupy-cuda12x==14.1.1       # GIMM-VFI softsplat forward-warping kernel (run_gimmvfi.py, gen_refiner_data.py)
+yacs==0.1.8                # GIMM-VFI / FlowFormer config loader
+easydict==1.13             # GIMM-VFI config
+loguru==0.7.3              # GIMM-VFI / FlowFormer logging
+
+lmdb==2.3.0                # REFID (basicsr) dataset backend (run_refid.py)
+
+causal-conv1d==1.6.2.post1 # VFIMamba selective-scan dependency (run_vfimamba.py)  [--no-build-isolation]
+mamba-ssm==2.3.2.post1     # VFIMamba state-space backbone (run_vfimamba.py)        [--no-build-isolation]
+
+numba==0.66.0              # denoise.py BAF/hot-pixel event denoiser (optional TimeLens preprocessing)
