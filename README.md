@@ -36,6 +36,36 @@ Official leaderboard scores (rank 1 on both splits):
 | Validation | **43.1056** | **0.980260** | 🥇 1st |
 | Hidden test | **31.8835** | **0.908784** | 🥇 1st |
 
+## 🎞️ Qualitative comparison
+
+Side-by-side interpolation of the skipped frames (7skip, 10× slow-motion),
+our single strongest member **EMA-E** against common image-only and event-based
+interpolators. Panels run worst → best, left → right.
+
+**Validation `room1` — with ground truth (per-panel = mean PSNR over the 28 interpolated frames):**
+
+<div align="center">
+<img src="assets/demo/compare_room1_7skip.gif" width="100%" alt="room1 7skip comparison">
+</div>
+
+| Naive blend | RIFE | SGM-VFI | EMA-VFI | TimeLens | **Ours: EMA-E** |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 29.31 | 39.15 | 39.68 | 39.69 | 39.57 | **42.11** |
+
+The event graft lifts our own image-only backbone (**EMA-VFI 39.69 → EMA-E 42.11 dB, +2.42**)
+purely from the events — this is the core of the method. *(single-member figure; the full
+30-member ensemble reaches 43.1056 dB.)*
+
+**Test `ball` — fast motion, no ground truth (purely qualitative):**
+
+<div align="center">
+<img src="assets/demo/compare_ball_7skip.gif" width="100%" alt="ball 7skip comparison">
+</div>
+
+On fast motion the image-only methods mis-place or smear the ball; TimeLens tracks the
+motion but tears; the event graft (**EMA-E**) recovers both the position and the sharpness.
+MP4 versions are in [`assets/demo/`](assets/demo/) for slides.
+
 ## 🧠 Architecture
 
 <div align="center">
