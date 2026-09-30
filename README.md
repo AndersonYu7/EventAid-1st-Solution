@@ -4,6 +4,7 @@
 
 ### Team **yunyu8** · EBMV Workshop @ ECCV 2026 · [Codabench #16375](https://www.codabench.org/competitions/16375/)
 
+[![Paper](https://img.shields.io/badge/Paper-OpenReview-b31b1b?style=flat-square)](https://openreview.net/forum?id=5XoIk80OT8)
 [![Validation](https://img.shields.io/badge/Validation-43.1056_dB_%2F_0.9803_SSIM-gold?style=flat-square)](#-results)
 [![Hidden Test](https://img.shields.io/badge/Hidden_Test-31.8835_dB_%2F_0.9088_SSIM-gold?style=flat-square)](#-results)
 [![Python](https://img.shields.io/badge/Python-3.13-3776AB?style=flat-square&logo=python&logoColor=white)](#-quick-start)
@@ -23,7 +24,8 @@ A **30-member ensemble** built around **EMA-E** — our zero-initialized event-v
 "graft" on EMA-VFI — combined with off-the-shelf image-only and event-based
 interpolators, lightweight (~4.9M-param) learned **fusion refiners**, **ERF-X170FPS
 real-event specialists**, and a per-frame **quadratic-form fusion** whose weights are
-fit exclusively on the validation split. Every number in the technical report has been
+fit exclusively on the validation split. Every number in the
+[technical report](https://openreview.net/forum?id=5XoIk80OT8) has been
 re-verified by executing this release, and the rebuilt submission zip is
 **bit-identical (950/950 files)** to the actually-uploaded winning entry.
 
